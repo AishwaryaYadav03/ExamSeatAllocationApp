@@ -1,0 +1,104 @@
+<section class="section">
+    <div class="row">
+			<!-- FORM Panel -->
+			<div class="col-md-8">
+			<form [formGroup]="form" (ngSubmit)="formSubmit()">
+				<div class="card">
+					<div class="card-header bg-secondary">
+						   <span style="color:white;">Student Form</span> 
+				  	</div>
+				<br>	<div class="card-body">
+							<input type="hidden" name="id">
+							<div class="row">
+                                <div class="col-md-6">
+							<div class="form-group">
+								<label class="control-label">Roll Number</label>
+								<input type="text" class="form-control" formControlName="rollNumber">
+							</div>
+                            </div>
+                            <div class="col-md-6">
+							<div class="form-group">
+								<label class="control-label">Mobile Number</label>
+								<input type="text" class="form-control" formControlName="mobileNumber">
+							</div>
+                            </div>
+
+                        </div>
+                            <div class="row">
+                                <div class="col-md-6">
+							<div class="form-group">
+								<label class="control-label">First Name</label>
+								<input type="text" class="form-control" formControlName="firstName">
+							</div>
+                            </div>
+                            <div class="col-md-6">
+							<div class="form-group">
+								<label class="control-label">Last Name</label>
+								<input type="text" class="form-control" formControlName="lastName">
+							</div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                        <div class="col-md-6">
+							<div class="form-group">
+								<br><label class="control-label">PRN Number</label>
+								<input type="text" class="form-control" formControlName="prnNumber">
+							</div>
+                        </div>
+                        <div class="col-md-6">
+							<div class="form-group">
+								<br><label class="control-label">Student Class</label>
+								<select class="form-control" formControlName="studentClass">
+									<option [value]="course.courseId" *ngFor="let course of courses">
+										{{ course.courseName }}
+									</option>
+								</select>
+							</div>
+							
+                        </div>
+
+					</div>
+						</div>	
+
+                       <div class="row">
+    <div class="col-md-6">
+        <div class="form-group ">
+            <label class="control-label me-2 " style="margin-left: 18px;">Semester</label>
+            <input style="margin-left: 18px;" type="text" class="form-control" formControlName="semester">
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="form-group ">
+            <label class="control-label me-2" style="margin-left: 10px;">Select Gender</label>
+		<div>
+			<input style="margin-left: 10px;" type="radio" formControlName="gender" id="male" value="Male">
+			<label for="male" class="me-2">Male</label>
+			<input type="radio" formControlName="gender" id="female" value="Female">
+			<label for="female">Female</label>
+		</div>
+
+        </div>
+    </div>
+</div>
+
+                        
+					<div class="card-footer">
+						<div class="row">
+							<div class="col-md-12">
+							
+								<button class="btn btn-primary" type="submit">Save</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+			</div>
+			<!-- FORM Panel -->
+
+			<!-- Table Panel -->
+			
+			<!-- Table Panel -->
+		</div>
+    </section>

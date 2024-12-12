@@ -1,0 +1,59 @@
+<section class="section">
+    <div class="row">
+			<!-- FORM Panel -->
+			<div class="col-md-8">
+			<form [formGroup]="form" (ngSubmit)="formSubmit()">
+				<div class="card">
+					<div class="card-header bg-secondary">
+						   <span style="color:white;">Add Block</span> 
+				  	</div>
+				<br>	<div class="card-body">
+							<input  type="hidden" name="id">
+                            <div class="row">
+                                <div class="col-md-6">
+							<div class="form-group">
+								<label class="control-label">Block Number</label>
+								<input  type="text" class="form-control" formControlName="blockNumber" >
+							</div>
+                            </div>
+                            <div class="col-md-6">
+							<div class="form-group">
+								<label class="control-label">Capacity</label>
+								<input type="text" class="form-control" formControlName="capacity" >
+							</div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                        <!-- <div class="col-md-6">
+							<div class="form-group">
+								<br><label class="control-label">Capacity</label>
+								<input type="text" class="form-control" formControlName="capacity" >
+							</div>
+                        </div> -->
+                        
+
+					</div>
+						</div>	
+
+
+
+                        
+					<div class="card-footer">
+						<div class="row">
+							<div class="col-md-12">
+							<input type="submit" name="submit" value="Save" class="btn btn-primary">
+								<button class="btn btn-sm btn-default col-sm-3" type="button" ></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+			</div>
+			<!-- FORM Panel -->
+
+			<!-- Table Panel -->
+			
+			<!-- Table Panel -->
+		</div>
+    </section>

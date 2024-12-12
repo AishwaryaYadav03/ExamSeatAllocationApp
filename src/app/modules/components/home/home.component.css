@@ -1,0 +1,40 @@
+.seat {
+    width: 50px;
+    margin: 5px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 800px;
+    cursor: pointer;
+  }
+
+  .available {
+    background-color: #28a745;
+    color: white;
+  }
+
+  .unavailable {
+    background-color: #dc3545;
+    color: white;
+    cursor: not-allowed;
+  }
+
+  .selected {
+    background-color: #ffc107;
+    color: black;
+  }
+
+  .seat-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 10px;
+  }
+
+  .seat-row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .seat-info {
+    margin-top: 20px;
+    font-size: 18px;
+  }
